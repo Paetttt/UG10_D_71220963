@@ -4,9 +4,10 @@ print('  1. Jumlah \t [+]')
 print('  2. Kurang \t [-]')
 print('  3. Kali \t [*]')
 print('  4. Bagi \t [/]')
+print('  5. Pangkat \t [**=]')
 print('=' * 25)
 
-operasi = input('Pilih operasi (1/2/3/4): ')
+operasi = input('Pilih operasi (1/2/3/4/5): ')
 bilangan_1 = eval(input('Masukkan bilangan pertama: '))
 bilangan_2 = eval(input('Masukkan bilangan kedua: '))
 
@@ -22,5 +23,8 @@ elif operasi == '3':
 elif operasi == '4':
   hasil = bilangan_1 / bilangan_2
   print(f'Hasil operasi dari {bilangan_1} / {bilangan_2} = {hasil}')
-else:
-  print('Tidak valid')
+elif operasi == '5' :
+    hasil = bilangan_1 ** bilangan_2
+    print(f'Hasil operasi dari {bilangan_1} **= {bilangan_2} = {hasil}' )
+else :
+    print('Tidak valid')
